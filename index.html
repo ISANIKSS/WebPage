@@ -1,103 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Google Home page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ISANIK Software Solutions — ERP & Business Software</title>
+  <meta name="description" content="Modern ERP & POS for real workflows. Inventory, Sales, Purchasing, Reporting, CRM, HRM, School & Project Management. On‑prem or private cloud." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ISANIK Software Solutions" />
+  <meta property="og:description" content="ERP & business software for real workflows. On‑prem or private cloud." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/appicon-512.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-	<header>
-		<div class="nav-container">
-			<a href="https://about.google/" target="_blank" class="text-link">
-				<p>About</p>
-			</a>
-			<a href="https://store.google.com/" target="_blank" class="text-link">
-				<p>Store</p>
-			</a>
-		</div>
-		<nav class="nav-container">
-			<a href="https://mail.google.com/mail/u/0/" target="_blank" class="text-link">
-				<p>Gmail</p>
-			</a>
-			<a href="https://images.google.com/" target="_blank" class="text-link">
-				<p>Images</p>
-			</a>
-			<a href="https://labs.google/" target="_blank" class="image-link"><i class="fa-solid fa-flask"></i></a>
-			<a href="https://www.google.co.jp/intl/en/about/products?tab=wh" target="_blank" class="image-link"><i
-					class="fa-solid fa-grip"></i></a>
-			<a href="#" class="img-button">
-				<img src="public/propic.jpeg" alt="pro-pic" />
-			</a>
-		</nav>
-	</header>
-	<main>
-		<h1 class="title-text">
-			<span style="color: #4082ed;">G</span>
-			<span style="color: #e23f32;">o</span>
-			<span style="color: #f1b504;">o</span>
-			<span style="color: #4082ed;">g</span>
-			<span style="color: #32a350;">l</span>
-			<span style="color: #e23f32;">e</span>
-		</h1>
-		<div class="input-bar">
-			<i class="fa-solid fa-magnifying-glass"></i>
-			<Input title="search" />
-			<div>
-				<i class="fa-solid fa-microphone input-icon"></i>
-				<i class="fa-solid fa-camera input-icon"></i>
-			</div>
-		</div>
-		<div class="button-group">
-			<button>
-				<p>Google search</p>
-			</button>
-			<button>
-				<p>I'm feeling lucky</p>
-			</button>
-		</div>
-	</main>
-	<footer>
-		<div class="footer">
-			India
-		</div>
-		<div class="footer2">
-			<div>
-				<a class="text-link"
-					href="https://www.google.co.jp/intl/en_jp/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
-					Advertising
-				</a>
-				<a class="text-link"
-					href="https://www.google.co.jp/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">
-					Business
-				</a>
-				<a class="text-link" href="https://google.com/search/howsearchworks/?fg=1">
-					How Search works
-				</a>
-			</div>
-			<div>
-				<a class="text-link" href="https://policies.google.com/privacy?hl=en-JP&fg=1">
-					Privacy
-				</a>
-				<a class="text-link" href="https://policies.google.com/terms?hl=en-JP&fg=1">
-					Terms
-				</a>
-				<a class="text-link">
-					Settings
-				</a>
-			</div>
-		</div>
-	</footer>
-</body>
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="ISANIK home">
+        <img class="brand-logo" src="assets/logo-horizontal.svg" alt="ISANIK Software Solutions" />
+      </a>
 
+      <nav class="nav">
+        <a href="#products">Products</a>
+        <a href="#modules">Modules</a>
+        <a href="#industries">Industries</a>
+        <a href="#deployment">Deployment</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="#demo">Request demo</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="pill">ERP • POS • Business Software</div>
+        <h1>Modern ERP for real workflows — on‑prem or private cloud.</h1>
+        <p class="lead">
+          ISANIK builds practical systems for daily operations: inventory, sales, purchasing, reporting and role‑based control — with customization for your domain.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#demo">Request a demo</a>
+          <a class="btn btn-ghost" href="#modules">View modules</a>
+        </div>
+
+        <div class="chips">
+          <span class="chip">On‑prem ready</span>
+          <span class="chip">Role‑based access</span>
+          <span class="chip">Audit‑friendly</span>
+          <span class="chip">Long‑term support</span>
+        </div>
+
+        <div class="proof reveal">
+          <div class="proof-item">
+            <div class="proof-num">20+</div>
+            <div class="proof-label">Modules & features</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-num">On‑prem</div>
+            <div class="proof-label">or private cloud</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-num">RBAC</div>
+            <div class="proof-label">+ approvals</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-num">Audit</div>
+            <div class="proof-label">logs & reporting</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media reveal">
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <img class="hero-mark" src="assets/logo-mark.svg" alt="" />
+            <div>
+              <div class="hero-card-title">What we deliver</div>
+              <div class="hero-card-sub">Clear scope, reliable rollout, long‑term support.</div>
+            </div>
+          </div>
+          <ul class="bullet">
+            <li>ERP & POS for multiple industries</li>
+            <li>Custom modules & integrations</li>
+            <li>Reports, approvals, audit trails</li>
+            <li>Deployment: on‑prem / private cloud</li>
+          </ul>
+
+          <!-- IMAGE SLOT:
+               Replace the SVG with your real UI screenshot later.
+               Put it in /assets as e.g. hero-dashboard.png and update src below. -->
+          <div class="shot">
+            <img src="assets/hero-dashboard.png.jpg" alt="ERP dashboard illustration (replace with product screenshot)" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wave" aria-hidden="true"></div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Products & Services</h2>
+        <p>Choose a ready ERP base, then extend with modules and domain‑specific workflows.</p>
+      </div>
+
+      <div class="grid cards reveal">
+        <article class="card">
+          <h3>ERP Core</h3>
+          <p>Inventory, purchasing, sales, masters, security, approvals, and reporting.</p>
+        </article>
+        <article class="card">
+          <h3>POS & Billing</h3>
+          <p>Billing, multi‑payment options, tax rules, item pricing, receipts, and cashier roles.</p>
+        </article>
+        <article class="card">
+          <h3>Domain Suites</h3>
+          <p>School Management, Project Management, CRM, HRM — built on one consistent platform.</p>
+        </article>
+        <article class="card">
+          <h3>Customization</h3>
+          <p>Forms, workflows, validations, master settings, and UI tailored to your operations.</p>
+        </article>
+        <article class="card">
+          <h3>Integration</h3>
+          <p>Import/export, APIs, barcode devices, printers, and links with existing systems.</p>
+        </article>
+        <article class="card">
+          <h3>Support</h3>
+          <p>Production support mindset: monitoring, updates, issue handling, and safe releases.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section id="modules" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Modules</h2>
+        <p>Start small, then scale. Enable only what your team needs.</p>
+      </div>
+
+      <div class="grid modules reveal">
+        <div class="tile"><h3>Inventory & Warehouse</h3><p>Items, stock, transfers, barcode flows, valuations.</p></div>
+        <div class="tile"><h3>Sales & POS</h3><p>Billing, receipts, discounts, returns, multi‑payment.</p></div>
+        <div class="tile"><h3>Purchasing</h3><p>Suppliers, POs, GRNs, approvals, cost tracking.</p></div>
+        <div class="tile"><h3>CRM</h3><p>Leads, customers, follow‑ups, service history.</p></div>
+        <div class="tile"><h3>HRM</h3><p>Employees, attendance, leave, roles, permissions.</p></div>
+        <div class="tile"><h3>School Management</h3><p>Students, fees, timetable, exams, reports.</p></div>
+        <div class="tile"><h3>Project Management</h3><p>Tasks, milestones, timesheets, approvals.</p></div>
+        <div class="tile"><h3>Reporting</h3><p>Dashboards, exports, audit trails, KPI summaries.</p></div>
+      </div>
+
+      <div class="cta-band reveal">
+        <div>
+          <h3>Need a specific workflow?</h3>
+          <p>Share your process — we’ll map it and propose the best module set + rollout plan.</p>
+        </div>
+        <a class="btn" href="#demo">Talk to us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Industries</h2>
+        <p>ERP + POS tailored for the rules of your domain.</p>
+      </div>
+
+      <!-- IMAGE SLOT (optional):
+           Add a small industry banner image in /assets and place it here.
+           Example: assets/industry-banner.jpg -->
+      <!-- <img class="section-banner reveal" src="assets/industry-banner.jpg" alt="Industry solutions" /> -->
+
+      <div class="grid industries reveal">
+        <div class="industry">Retail & Trading</div>
+        <div class="industry">Distribution</div>
+        <div class="industry">Manufacturing</div>
+        <div class="industry">Services</div>
+        <div class="industry">Education / Schools</div>
+        <div class="industry">Project‑based teams</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPLOYMENT -->
+  <section id="deployment" class="section section-dark">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <h2>Deployment options</h2>
+          <p class="lead2">
+            Keep data on your network (on‑prem) or run in a controlled private cloud — with the same ERP platform.
+          </p>
+
+          <div class="grid deploy reveal">
+            <div class="deploy-card">
+              <h3>On‑prem</h3>
+              <p>Run inside your network. Great for strict policies and local performance.</p>
+              <ul>
+                <li>Local database</li>
+                <li>LAN performance</li>
+                <li>Offline‑tolerant processes</li>
+              </ul>
+            </div>
+            <div class="deploy-card">
+              <h3>Private cloud</h3>
+              <p>Controlled hosting, easier remote access, and central updates.</p>
+              <ul>
+                <li>VPN / private access</li>
+                <li>Centralized backups</li>
+                <li>Managed updates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="deploy-visual reveal">
+          <div class="visual-card">
+            <div class="visual-title">Security mindset</div>
+            <p>Role‑based access, approvals, and audit trails built into workflows.</p>
+            <div class="visual-points">
+              <span>RBAC</span><span>Approvals</span><span>Audit logs</span><span>Exports</span>
+            </div>
+            <!-- IMAGE SLOT:
+                 Replace with a diagram or screenshot later:
+                 assets/deployment-diagram.png -->
+            <img class="visual-img" src="assets/hero-illustration.svg" alt="Deployment diagram placeholder" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO / CONTACT -->
+  <section id="demo" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Request a demo</h2>
+        <p>Tell us your industry and requirements. We’ll respond with a module plan and next steps.</p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <form class="form" action="#" method="post" onsubmit="return window.isanikSubmitDemo(event)">
+          <!-- IMPORTANT:
+               GitHub Pages cannot send email directly.
+               Easiest working option: Formspree.
+               Replace FORM_ENDPOINT below with your real Formspree endpoint. -->
+          <input type="hidden" id="formEndpoint" value="FORM_ENDPOINT" />
+
+          <div class="row">
+            <label>Full name<input name="name" required placeholder="Your name" /></label>
+            <label>Email<input name="email" type="email" required placeholder="you@company.com" /></label>
+          </div>
+          <div class="row">
+            <label>Phone<input name="phone" placeholder="+81 ..." /></label>
+            <label>Company<input name="company" placeholder="Company name" /></label>
+          </div>
+          <label>Message<textarea name="message" rows="5" required placeholder="What do you want to build or replace?"></textarea></label>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Send request</button>
+            <a class="btn btn-ghost" href="mailto:isaignanam@isaniksoftwaresolutions.com?subject=ISANIK%20Demo%20Request">Email directly</a>
+          </div>
+
+          <p class="form-note">
+            If you want the form to work on GitHub Pages: create a Formspree form and replace <b>FORM_ENDPOINT</b>.
+          </p>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+
+        <aside class="contact-card">
+          <h3>ISANIK Software Solutions</h3>
+          <p class="muted">ERP • POS • Custom modules • Integrations</p>
+          <div class="contact-lines">
+            <div><span>Email</span><a href="mailto:isaignanam@isaniksoftwaresolutions.com">isaignanam@isaniksoftwaresolutions.com</a></div>
+            <div><span>Deployment</span><span>On‑prem + Private cloud</span></div>
+            <div><span>Domains</span><span>ERP, POS, School, Project, CRM, HRM</span></div>
+          </div>
+
+          <!-- IMAGE SLOT (optional):
+               Add a small team/office image (licensed) and link it here.
+               Example: assets/team.jpg -->
+          <!-- <img class="contact-img" src="assets/team.jpg" alt="Team" /> -->
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-mark" src="assets/logo-stacked.svg" alt="ISANIK Software Solutions" />
+        <p class="muted">Build once. Run reliably. Support for the long term.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#products">Products</a>
+        <a href="#modules">Modules</a>
+        <a href="#industries">Industries</a>
+        <a href="#deployment">Deployment</a>
+        <a href="#demo">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> ISANIK Software Solutions</span>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll reveal (simple, light)
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      }
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+
+    // Demo form submit for GitHub Pages
+    window.isanikSubmitDemo = async function(ev){
+      ev.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = '';
+      const endpoint = (document.getElementById('formEndpoint')?.value || '').trim();
+
+      // If user didn't set Formspree endpoint, show a helpful message.
+      if (!endpoint || endpoint === 'FORM_ENDPOINT') {
+        status.textContent = 'Form is not connected yet. Use “Email directly” or set a Formspree endpoint in the hidden field.';
+        return false;
+      }
+
+      try{
+        const form = ev.target;
+        const formData = new FormData(form);
+        const res = await fetch(endpoint, { method:'POST', body: formData, headers: { 'Accept': 'application/json' }});
+        if (res.ok){
+          status.textContent = 'Thanks — your request was sent. We will reply soon.';
+          form.reset();
+        } else {
+          status.textContent = 'Could not send. Please use the “Email directly” button.';
+        }
+      } catch {
+        status.textContent = 'Could not send. Please use the “Email directly” button.';
+      }
+      return false;
+    };
+  </script>
+</body>
 </html>

@@ -266,16 +266,16 @@
       </div>
 
       <div class="contact-grid reveal">
-        <form class="form" action="#" method="post" onsubmit="return window.isanikSubmitDemo(event)">
-          <!-- IMPORTANT:
-               GitHub Pages cannot send email directly.
-               Easiest working option: Formspree.
-               Replace FORM_ENDPOINT below with your real Formspree endpoint. -->
-          <input type="hidden" id="formEndpoint" value="FORM_ENDPOINT" />
+        <form class="form" action="https://formspree.io/f/xpqjzrlo" method="POST">
+          <!-- Formspree -->
+          <input type="hidden" name="_subject" value="ISANIK Demo Request" />
+          <input type="hidden" name="_next" value="thanks.html" />
+          <!-- Honeypot (spam trap) -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div class="row">
             <label>Full name<input name="name" required placeholder="Your name" /></label>
-            <label>Email<input name="email" type="email" required placeholder="you@company.com" /></label>
+            <label>Your email<input name="email" type="email" required placeholder="you@company.com" /></label>
           </div>
           <div class="row">
             <label>Phone<input name="phone" placeholder="+81 ..." /></label>
@@ -289,9 +289,8 @@
           </div>
 
           <p class="form-note">
-            If you want the form to work on GitHub Pages: create a Formspree form and replace <b>FORM_ENDPOINT</b>.
+            After you click <b>Send request</b>, you’ll be redirected to a thank‑you page.
           </p>
-          <p id="formStatus" class="form-status" aria-live="polite"></p>
         </form>
 
         <aside class="contact-card">
@@ -344,35 +343,6 @@
       }
     }, { threshold: 0.12 });
     revealEls.forEach(el => io.observe(el));
-
-    // Demo form submit for GitHub Pages
-    window.isanikSubmitDemo = async function(ev){
-      ev.preventDefault();
-      const status = document.getElementById('formStatus');
-      status.textContent = '';
-      const endpoint = (document.getElementById('formEndpoint')?.value || '').trim();
-
-      // If user didn't set Formspree endpoint, show a helpful message.
-      if (!endpoint || endpoint === 'FORM_ENDPOINT') {
-        status.textContent = 'Form is not connected yet. Use “Email directly” or set a Formspree endpoint in the hidden field.';
-        return false;
-      }
-
-      try{
-        const form = ev.target;
-        const formData = new FormData(form);
-        const res = await fetch(endpoint, { method:'POST', body: formData, headers: { 'Accept': 'application/json' }});
-        if (res.ok){
-          status.textContent = 'Thanks — your request was sent. We will reply soon.';
-          form.reset();
-        } else {
-          status.textContent = 'Could not send. Please use the “Email directly” button.';
-        }
-      } catch {
-        status.textContent = 'Could not send. Please use the “Email directly” button.';
-      }
-      return false;
-    };
   </script>
 </body>
 </html>

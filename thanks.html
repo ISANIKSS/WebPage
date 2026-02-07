@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you — ISANIK Software Solutions</title>
+  <meta name="description" content="Thanks for contacting ISANIK Software Solutions." />
+
+  <link rel="icon" href="favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="ISANIK home">
+        <img class="brand-logo" src="assets/logo-horizontal.svg" alt="ISANIK Software Solutions" />
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#modules">Modules</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="index.html#deployment">Deployment</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="index.html#demo">Request demo</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Thanks — we received your request.</h2>
+        <p>We’ll reply to your email soon. If it’s urgent, you can email us directly.</p>
+      </div>
+
+      <div class="cta-band" style="margin-top: 18px;">
+        <div>
+          <h3>Contact</h3>
+          <p class="muted">isaignanam@isaniksoftwaresolutions.com</p>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <a class="btn" href="index.html#top">Back to home</a>
+          <a class="btn btn-ghost" href="mailto:isaignanam@isaniksoftwaresolutions.com?subject=ISANIK%20Demo%20Request">Email directly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-mark" src="assets/logo-stacked.svg" alt="ISANIK Software Solutions" />
+        <p class="muted">Build once. Run reliably. Support for the long term.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#modules">Modules</a>
+        <a href="index.html#industries">Industries</a>
+        <a href="index.html#deployment">Deployment</a>
+        <a href="index.html#demo">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> ISANIK Software Solutions</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
